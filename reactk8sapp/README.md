@@ -1,9 +1,9 @@
 
 
 ### Build app locally
-`yarn start` localhost:3000
-`yarn test` Launches the test runner in the interactive watch mode.
-`yarn build` Builds the app for production to the `build` folder.
+`yarn start` localhost:3000\
+`yarn test` Launches the test runner in the interactive watch mode.\
+`yarn build` Builds the app for production to the `build` folder.\
 
 ## Create docker image of your app
 Navigate to desired app directory with dockerfile:
