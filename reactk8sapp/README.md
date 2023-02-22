@@ -22,23 +22,22 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 ## Containerizing
-
 For minikube:
-run 'minikube start'
+`minikube start`
 
 For Docker Desktop User: Enable kubernetes in docker desktop to run a k8s cluster with a single node.
 
 ## create docker image of your app
 Navigate to desired app directory with dockerfile:
-run 'docker build -t <NAME> .'
+`docker build -t <NAME> .`
 
 Push the image to your dockerhub repo:
-run 'docker push <DOCKERHUBUSER>/<REPONAME>:<TAG>'
+`docker push <DOCKERHUBUSER>/<REPONAME>:<TAG>`
 
 Run a docker image of app:
-run 'docker run -d -p <PORTF>:80 <APPNAME>
+`docker run -d -p <PORTF>:80 <APPNAME>`
 
 ## To create k8s pod/service/deployment with your app
 Navigate to pods directory with desired manifest yml. (pod.yml)
 Make sure container image is correct dockerhub/repo.
-run 'kubectl apply -f <manifest>'
+`kubectl apply -f <manifest>`
